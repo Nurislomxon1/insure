@@ -18,14 +18,14 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-
+    
 }
 /* star navigation */
 .header-navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     width: 550px;
 }
 
@@ -33,7 +33,7 @@ body{
     display: flex;
     align-items: center;
     list-style: none;
-
+    
 }
 .header-navigation-link{
     margin-left: 25px;
@@ -69,6 +69,11 @@ body{
 /* start first section */
 .hero{
     background-color: #2D2641;
+}
+.bg {
+    background-image: url(../img/Group\ 17\ \(1\).svg);
+    background-position: right  top ;
+    background-repeat: no-repeat;
 }
 
 .hero-box{
@@ -125,8 +130,13 @@ body{
 /* end first section */
 
 /* start second section */
+.bg-img {
+    background-image: url(../img/Group\ 18\ \(1\).svg);
+    background-position: left;
+    background-repeat: no-repeat;
+}
 .local-line{
-    margin-top: 50px;
+    margin-top: 100px;
     background-color: #c396c6;
 }
 
@@ -144,6 +154,27 @@ body{
     display: flex;
     justify-content: space-between;
     padding-left: 0;
+}
+.local-item::before {
+    content: "";
+    display: block;
+    width: 86px;
+    height: 86px;
+    background-color: #888;
+    border-radius: 50%;
+}
+.local-item:nth-child(1)::before {
+    background-image: url("../img/chaqmoq.svg");
+}
+.local-item:nth-child(2)::before {
+    background-image: url("../img/dollar.svg");
+}
+.local-item:nth-child(2) {
+    margin: 0 30px;
+}
+
+.local-item:nth-child(3)::before {
+    background-image: url("../img/person.svg");
 }
 
 .local-item{
@@ -173,10 +204,9 @@ body{
 }
 .wework-div{
     display: flex;
-    background-color: #2D2641;
-    align-items: center;
     justify-content: space-around;
-    
+    align-items: center;
+    background-image: url(../img/wevork.png);    
 }
 .wework-box{
     width: 475px;
@@ -210,7 +240,7 @@ body{
 .site-footer{
     padding-top: 67px;
     padding-bottom: 64px;
-    background: #fafafa;
+    background-image: url(../img/footer.png);
 }
 .footer-box{
     display: flex;
@@ -225,13 +255,13 @@ body{
     justify-content: space-around;
     width: 120px;
     list-style: none;
+
 }
 .bottom-text{
     padding: 0;
     font-family: 'Karla';
     font-weight: 700;
     font-size: 13pxx;
-    line-height: 15px;
     letter-spacing: 1.5px;
     color: #837D88;
 }
@@ -240,12 +270,13 @@ body{
 }
 .bottom-item{
     list-style: none;
+
 }
 .bottom-link{
     font-family: 'Karla';
     font-weight: 700;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 30px;
     letter-spacing: 1.5px;
     text-decoration: none;
     list-style: none;
